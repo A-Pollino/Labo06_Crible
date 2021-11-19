@@ -1,0 +1,20 @@
+1.Bienvenue
+	message
+
+2.Saisie
+	saisie
+
+3.Création du tableaux et affichage
+	Affichage tableau initialisé
+
+4.Calcul
+	retour de la position du prochain premier 
+	modifie le tableau	
+
+5.Affichage tableaux criblé
+	même fonction que le point 3
+
+6.Affichages des nombres premiers
+	Affichage des nombres premiers
+
+7.Quitter

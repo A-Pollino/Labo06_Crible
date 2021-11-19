@@ -1,0 +1,16 @@
+3.Création du tableaux et affichage
+
+	void afficherTableau(const bool tab[], unsigned min, unsigned max, char vrai, char faux, unsigned colonne = 10) //Laetitia
+	
+4.Calcul
+
+	unsigned positionValeur(const bool tab[], unsigned taille, bool valeur, unsigned position)            //Antonio
+	void - (bool tab[], unsigned taille, unsigned position, unsigned diviseur) //position = diviseur + 1  //Laetitita
+
+5.Affichage tableaux criblé
+	la fonction au point 3
+
+6.Affichage
+	void - (const bool tab[], unsigned min, unsigned max, bool valeur) //Antonio
+
+		
