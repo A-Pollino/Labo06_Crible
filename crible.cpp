@@ -10,6 +10,7 @@ Compilateur : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
 
+#include "crible.h"
 
 using namespace std;
 
@@ -18,5 +19,16 @@ unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
 
 }
 
+
+void divisionTableau(bool tab[], unsigned taille,
+                     unsigned position, unsigned diviseur) {
+
+   for(; position <= taille; ++position) {
+
+      if (!(position % diviseur)) {
+         tab[position] = true;
+      }
+   }
+}
 
 
