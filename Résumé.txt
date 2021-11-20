@@ -1,0 +1,31 @@
+
+//-----------------------------------------------------------------------------
+// FICHIER SAISIE.CPP
+//-----------------------------------------------------------------------------
+
+réutilisation de ce qui a été déjà fait
+
+
+//-----------------------------------------------------------------------------
+// FICHIER GESTION_TABLEAU.CPP
+//-----------------------------------------------------------------------------
+
+afficher tableaux :
+	contrôle des cases afin de déterminer si c'est un chiffre premier et affichage d'un symbole (0 ou 1[dans notre cas X])
+
+void - (const bool tab[], unsigned min, unsigned max, bool valeur)
+	Calcul des nombres premier en fonction de la position 
+
+positionValeur :
+	Recherche linéaire du prochain booléen en paramètre
+	
+
+//-----------------------------------------------------------------------------
+// FICHIER CRIBLE.CPP
+//-----------------------------------------------------------------------------
+
+
+
+void - (bool tab[], unsigned taille, unsigned position, unsigned diviseur) (définir un nom correct)
+	Calcul des nombres premier en fonction de la position
+
