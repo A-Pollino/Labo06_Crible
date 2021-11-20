@@ -1,6 +1,14 @@
-//
-// Created by anton on 20.11.2021.
-//
+/*
+-----------------------------------------------------------------------------------
+Nom du fichier : <nom du fichier>.<xxx>
+Nom du labo    : <nom du labo>
+Auteur(s)      : <prénom> <nom>
+Date creation  : <jj.mm.aaaa>
+Description    : <à compléter>
+Remarque(s)    : <à compléter>
+Compilateur    : Mingw-w64 g++ 11.1.0
+-----------------------------------------------------------------------------------
+*/
 
 #ifndef LABO06_CRIBLE_CRIBLE_H
 #define LABO06_CRIBLE_CRIBLE_H
