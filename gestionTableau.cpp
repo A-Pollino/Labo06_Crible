@@ -10,9 +10,27 @@ Compilateur : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
 
-#include <iostream>
+#include <iostream>         // cout
+#include "gestionTableau.h"
 
 using namespace std;
+
+void afficherTableau(const bool tab[], unsigned min, unsigned max,
+                     char vrai, char faux, unsigned colonne) {
+
+   unsigned nombreColonnes = 0;
+   for(unsigned i = min; i <= max; ++i) {
+
+      tab[i] ? cout << vrai : cout << faux;
+      cout << " ";
+
+      if(++nombreColonnes == colonne)
+      {
+         cout << endl;
+         nombreColonnes = 0;
+      }
+   }
+}
 
 unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
                         unsigned position){
