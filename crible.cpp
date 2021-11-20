@@ -13,10 +13,6 @@ Compilateur : Mingw-w64 g++ 11.1.0
 
 using namespace std;
 
-unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
-                        unsigned position){
-
-}
 
 
 

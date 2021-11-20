@@ -13,16 +13,19 @@ Compilateur : Mingw-w64 g++ 11.1.0
 #include <cstdlib>
 #include <iostream>
 #include <cmath>
-#include <iomanip>
+
 
 #define ERASE_BUFFER cin.ignore(numeric_limits<streamsize>::max(), '\n')
 
 using namespace std;
-int main()
-{
- <code>
+
+int main(){
+
 
  cout << "Presser ENTER pour quitter";
  ERASE_BUFFER;
  return EXIT_SUCCESS;
 }
+
+
+
