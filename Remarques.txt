@@ -1,0 +1,27 @@
+Questions :
+
+Alignement des points virgules
+
+Créer une variable pour taille - décalage
+
+Erreur dans la déclaration du tableau normal ?
+
+Ajouter un "s" à la fin des constantes string ?
+
+Alignement des endl
+
+Alignement des "="
+
+Spécifier le pourquoi des constantes message ?
+
+
+
+
+
+Remarques :
+
+Modifier le nom des constantes char
+Modifier le nom de certaines fonctions
+commentaires dans les cpp et h
+Finaliser les commentaires dans le main (include)
+
