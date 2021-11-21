@@ -79,10 +79,11 @@ int main() {
    tableau[1]        = true; // 1 est un cas particulier, ni premier, ni composé
 
    // Crible d'Eratosthène
-   while (position < taille - DECALAGE){
+   while (position < taille){
+
+      divisionTableau(tableau, taille, position * 2, position);
       ++position;
       ++compteur;
-      divisionTableau(tableau, taille, position, position - DECALAGE);
       position = positionValeur(tableau, taille, PREMIER, position);
    }
 
