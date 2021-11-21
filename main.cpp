@@ -51,6 +51,7 @@ int main() {
    const char   VRAI             = 'X';
    const char   FAUX             = '0';
    const bool   PREMIER          = false;
+   const bool   PAS_PREMIER      = true;
 
    //-----------------------------------------------------------------
    // Bienvenue
@@ -69,6 +70,7 @@ int main() {
    cout << endl;
    cout << MSG_INIT_TAB << endl;
    afficherTableau(tableau, MIN_AFFICHAGE, taille - DECALAGE, VRAI, FAUX);
+   cout << endl;
 
    //-----------------------------------------------------------------
    // Identification des nombres premiers
@@ -81,7 +83,7 @@ int main() {
    // Crible d'Eratosthène
    while (position < taille){
 
-      divisionTableau(tableau, taille, position * 2, position);
+      divisionTableau(tableau, taille, PAS_PREMIER, position * 2, position);
       ++position;
       ++compteur;
       position = positionValeur(tableau, taille, PREMIER, position);
@@ -92,6 +94,7 @@ int main() {
    //-----------------------------------------------------------------
    cout << MSG_CRIBLAGE     << endl;
    afficherTableau(tableau, MIN_AFFICHAGE, taille - DECALAGE, VRAI, FAUX);
+   cout << endl;
 
    cout << MSG_NBR_PREMIERS << compteur << endl;
    afficherNombresPremiers(tableau, MIN_AFFICHAGE, taille - DECALAGE, PREMIER);

@@ -22,13 +22,11 @@ void afficherTableau(const bool tab[], unsigned min, unsigned max,
                      char vrai, char faux, unsigned colonne) {
 
    unsigned nombreColonnes = 0;
-   for(unsigned i = min; i <= max; ++i) {
-
-      tab[i] ? cout << vrai : cout << faux;
+   for(unsigned position = min; position <= max; ++position) {
+      tab[position] ? cout << vrai : cout << faux;
       cout << " ";
 
-      if(++nombreColonnes == colonne)
-      {
+      if(++nombreColonnes == colonne && position != max) {
          cout << endl;
          nombreColonnes = 0;
       }
@@ -55,8 +53,7 @@ void afficherNombresPremiers(const bool tab[], unsigned min, unsigned max,
       if (valeur == tab[position]) {
          cout << setw(alignement) << position << " ";
 
-         if(++nombreColonnes == colonne)
-         {
+         if(++nombreColonnes == colonne && position != max) {
             cout << endl;
             nombreColonnes = 0;
          }

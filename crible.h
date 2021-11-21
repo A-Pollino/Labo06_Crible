@@ -22,7 +22,7 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 /// \param taille    La taille du tableau
 /// \param position  Position depuis laquelle le test effectué
 /// \param diviseur  Diviseur
-void divisionTableau(bool tab[], unsigned taille,
-                     unsigned position, unsigned diviseur);
+void divisionTableau(bool tab[], unsigned taille, bool valeur,
+                     unsigned position, unsigned deplacement);
 
 #endif //LABO06_CRIBLE_CRIBLE_H

@@ -12,11 +12,11 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 
 #include "crible.h"
 
-void divisionTableau(bool tab[], unsigned taille,
-                     unsigned position, unsigned diviseur) {
+void divisionTableau(bool tab[], unsigned taille, bool valeur,
+                     unsigned position, unsigned deplacement) {
 
-   for(; position < taille; position += diviseur) {
-      tab[position] = true;
+   for(; position < taille; position += deplacement) {
+      tab[position] = valeur;
    }
 }
 
