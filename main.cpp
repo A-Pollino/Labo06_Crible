@@ -47,9 +47,8 @@ int main() {
    const int    MIN_SAISIE       = 2;
    const int    MAX_SAISIE       = 100;
    const int    DECALAGE         = 1;
-   const int    MIN_AFFICHAGE    = 1;
-   const char   VRAI             = 'X';
-   const char   FAUX             = '0';
+   const char   AFFICHAGE_VRAI   = 'X';
+   const char   AFFICHAGE_FAUX   = '0';
    const bool   PREMIER          = false;
    const bool   PAS_PREMIER      = true;
 
@@ -58,18 +57,21 @@ int main() {
    //-----------------------------------------------------------------
    cout << "Ce programme identifie tous les nombres premiers jusqu'au nombre "
            "choisi par l'utilisateur, "               << endl;
-   cout << "selon la methode du crible d'Eratosthene" << endl  << endl;
+   cout << "selon la methode du crible d'Eratosthene" << endl << endl;
 
    //-----------------------------------------------------------------
    // Saisie et initialisation du tableau
    //-----------------------------------------------------------------
-   unsigned      taille = (unsigned)(DECALAGE +
-                          saisie(MIN_SAISIE, MAX_SAISIE, MSG_SAISIE,MSG_ERREUR));
-   bool tableau[taille] = {};
+   const unsigned TAILLE = (unsigned)(DECALAGE +
+                           saisie(MIN_SAISIE, MAX_SAISIE, MSG_SAISIE,MSG_ERREUR));
+   bool tableau[TAILLE];
+   for(unsigned i = 0; i < TAILLE; ++i) {
+      tableau[i] = false;
+   }
 
    cout << endl;
    cout << MSG_INIT_TAB << endl;
-   afficherTableau(tableau, MIN_AFFICHAGE, taille - DECALAGE, VRAI, FAUX);
+   afficherTableau(tableau, DECALAGE, TAILLE - 1, AFFICHAGE_VRAI, AFFICHAGE_FAUX);
    cout << endl;
 
    //-----------------------------------------------------------------
@@ -78,26 +80,26 @@ int main() {
    unsigned position = 2;
    int      compteur = 0;
 
-   tableau[1]        = true; // 1 est un cas particulier, ni premier, ni composé
+   tableau[1] = true; // 1 est un cas particulier, ni premier, ni composé
 
    // Crible d'Eratosthène
-   while (position < taille){
+   while (position < TAILLE) {
 
-      divisionTableau(tableau, taille, PAS_PREMIER, position * position, position);
+      divisionTableau(tableau, TAILLE, PAS_PREMIER, position * position, position);
       ++position;
       ++compteur;
-      position = positionValeur(tableau, taille, PREMIER, position);
+      position = positionValeur(tableau, TAILLE, PREMIER, position);
    }
 
    //-----------------------------------------------------------------
    // Affichage du criblage et des nombres premiers
    //-----------------------------------------------------------------
-   cout << MSG_CRIBLAGE     << endl;
-   afficherTableau(tableau, MIN_AFFICHAGE, taille - DECALAGE, VRAI, FAUX);
+   cout << MSG_CRIBLAGE << endl;
+   afficherTableau(tableau, DECALAGE, TAILLE - 1, AFFICHAGE_VRAI, AFFICHAGE_FAUX);
    cout << endl;
 
    cout << MSG_NBR_PREMIERS << compteur << endl;
-   afficherNombresPremiers(tableau, MIN_AFFICHAGE, taille - DECALAGE, PREMIER);
+   afficherNombresPremiers(tableau, DECALAGE, TAILLE - 1, PREMIER);
    cout << endl;
 
    //-----------------------------------------------------------------
