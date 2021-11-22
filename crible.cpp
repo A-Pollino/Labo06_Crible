@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------
 Nom du fichier : crible.cpp
 Nom du labo    : Labo 06 : crible Eratosthène
-Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 20.11.2021
 Description    : Définition de la fonction permettant de cribler le tableau.
 Remarque(s)    : -

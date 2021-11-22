@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------
 Nom du fichier : gestionTableau.cpp
 Nom du labo    : Labo 06 : crible Eratosthène
-Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 19.11.2021
 Description    : Définition des fonctions permettant l'affichage, et la
                  récupération d'informations d'un tableau.
@@ -37,9 +37,9 @@ void afficherTableau(const bool tab[], unsigned min, unsigned max,
 }
 
 unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
-                        unsigned position){
+                        unsigned position) {
 
-   for( ; position < taille; ++position){
+   for(; position < taille; ++position) {
          if (tab[position] == valeur){
             return position;
          }
@@ -51,7 +51,7 @@ void afficherPositionValeur(const bool tab[], unsigned min, unsigned max,
                             bool valeur, unsigned colonne, int alignement) {
 
    unsigned nombreColonnes = 0;
-   for(unsigned position = min; position <= max; ++position){
+   for(unsigned position = min; position <= max; ++position) {
       if (valeur == tab[position]) {
          cout << setw(alignement) << position << " ";
 

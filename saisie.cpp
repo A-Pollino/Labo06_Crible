@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------
 Nom du fichier : saisie.cpp
 Nom du labo    : Labo 06 : crible Eratosthène
-Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 19.11.2021
 Description    : Déclaration de la fonction permettant d'obtenir une saisie
                  utilisateur contrôlée.
@@ -19,11 +19,11 @@ using namespace std;
 
 int saisie(int min, int max, const string& saisieMessage,
            const string& erreurMessage) {
+
    bool erreur;
    int  saisie;
 
    do {
-
       // message et saisie
       cout << saisieMessage << " [" << min << " - " << max << "] :";
 
@@ -33,6 +33,7 @@ int saisie(int min, int max, const string& saisieMessage,
          cout << erreurMessage << endl;
          cin.clear();
       }
+
       // vider buffer
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
    } while(erreur);

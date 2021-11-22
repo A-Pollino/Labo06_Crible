@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------
 Nom du fichier : saisie.h
 Nom du labo    : Labo 06 : crible Eratosthène
-Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 19.11.2021
 Description    : Définition de la fonction permettant d'obtenir une saisie
                  utilisateur contrôlée entre une valeur minimale et une valeure
@@ -25,7 +25,7 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 /// \param max              Valeur maximal comprise
 /// \param saisieMessage    Message à afficher lors de la saisie
 /// \param erreurMessage    Message à afficher lors d'une erreur de saisie
-/// \return                 Valeur saisie de l'utilisateur en int
+/// \return                 Retourne la valeur saisie de l'utilisateur en int
 int saisie(int min, int max, const std::string& saisieMessage,
            const std::string& erreurMessage);
 

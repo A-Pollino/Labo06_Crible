@@ -17,13 +17,13 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 
 /// Nom                 criblageTableau
 /// But                 Remplacer les valeurs dont la position est divisible par
-///                     le diviseur
+///                     le diviseur et est plus grande ou égale à diviseur^2
 ///
 /// \param tab          Le tableau à modifier
 /// \param taille       La taille du tableau
 /// \param valeur       La nouvelle valeur à insérer dans le tableau
 /// \param diviseur     Valeur utilisée pour tester si la position est un multiple
-///                     de diviseur
+///                     de diviseur et est plus grande ou égale à diviseur^2
 void criblageTableau(bool tab[], unsigned taille, bool valeur,
                      unsigned diviseur);
 

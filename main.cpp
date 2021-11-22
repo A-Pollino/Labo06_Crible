@@ -4,9 +4,9 @@ Nom du fichier : main.cpp
 Nom du labo    : Labo 06 : crible Eratosthène
 Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 19.11.2021
-Description    : Ce programme permet d'identifier les nombres premiers, jusqu'à un
-                 nombre donné par la saisie de l'utilisateur. Pour cela, la
-                 méthode employée est celle du crible d'Eratosthène.
+Description    : Ce programme permet d'identifier tous les nombres premiers,
+                 jusqu'à un nombre donné par la saisie de l'utilisateur. Pour
+                 cela, la méthode employée est celle du crible d'Eratosthène.
 
                  Pour plus d'informations concernant la méthode d'Eratosthène :
                  https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne

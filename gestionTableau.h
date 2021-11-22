@@ -2,11 +2,11 @@
 -----------------------------------------------------------------------------------
 Nom du fichier : gestionTableau.h
 Nom du labo    : Labo 06 : crible Eratosthène
-Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
 Date creation  : 19.11.2021
 Description    : Déclaration des fonctions permettant l'affichage d'un segment
                  précis ou d'une position d'un tableau, ainsi que la récupération
-                 d'informations tel que la position d'une valeur dans un tableau.
+                 d'informations telle que la position d'une valeur dans un tableau.
 Remarque(s)    : -
 Compilateur    : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
@@ -22,11 +22,11 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 ///                 tableau est à choisir.
 ///
 /// \param tab      Le tableau à afficher
-/// \param min      L'index minimal depuis le quel l'affichage commence
+/// \param min      L'index minimal depuis lequel l'affichage commence
 /// \param max      L'index maximal où l'affichage se finit. Il doit être
 ///                 strictement plus petit que la taille du tableau
 /// \param vrai     Charactère à afficher quand la valeur est égale à 1
-/// \param faux     Charactère à afficher quand la valeur est àgale à 0
+/// \param faux     Charactère à afficher quand la valeur est égale à 0
 /// \param colonne  Nombre de colonnes de l'affichage
 void afficherTableau(const bool tab[], unsigned min, unsigned max,
                      char vrai, char faux, unsigned colonne = 10);
@@ -40,7 +40,7 @@ void afficherTableau(const bool tab[], unsigned min, unsigned max,
 /// \param taille       Taille du tableau
 /// \param valeur       Valeur recherchée
 /// \param position     Position depuis laquelle il faut chercher la valeur
-/// \return             Retourne la position du premier éléments trouvé
+/// \return             Retourne la position du premier élément trouvé
 unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
                         unsigned position);
 
@@ -50,7 +50,7 @@ unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
 ///                     en paramètre
 ///
 /// \param tab          Le tableau à afficher
-/// \param min          L'index minimal depuis le quel l'affichage commence
+/// \param min          L'index minimal depuis lequel l'affichage commence
 /// \param max          L'index maximal où l'affichage se finit. Il doit être
 ///                     strictement plus petit que la taille du tableau
 /// \param valeur       Valeur dont les positions doivent être affichées
