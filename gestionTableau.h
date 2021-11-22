@@ -1,39 +1,19 @@
 /*
 -----------------------------------------------------------------------------------
-Nom du fichier : <nom du fichier>.<xxx>
-Nom du labo    : <nom du labo>
-Auteur(s)      : <prénom> <nom>
-Date creation  : <jj.mm.aaaa>
-Description    : <à compléter>
-Remarque(s)    : <à compléter>
+Nom du fichier : gestionTableau.h
+Nom du labo    : Labo 06 : crible Eratosthène
+Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Date creation  : 19.11.2021
+Description    : Déclaration des fonctions permettant l'affichage d'un segment
+                 précis ou d'une position d'un tableau, ainsi que la récupération
+                 d'informations tel que la position d'une valeur dans un tableau.
+Remarque(s)    : -
 Compilateur    : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
 
 #ifndef LABO06_CRIBLE_GESTIONTABLEAU_H
 #define LABO06_CRIBLE_GESTIONTABLEAU_H
-
-///-----------------------------------------------------
-///
-/// \param tab
-/// \param taille
-/// \param valeur
-/// \param position
-/// \return
-///------------------------------------------------------
-unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
-                        unsigned position);
-
-
-///
-/// \param tab
-/// \param min
-/// \param max
-/// \param valeur
-/// \param colonne
-/// \param alignement
-void afficherNombresPremiers(const bool tab[], unsigned min, unsigned max,
-                             bool valeur, unsigned colonne = 10, int alignement = 2);
 
 
 /// Nom             afficherTableau
@@ -50,5 +30,33 @@ void afficherNombresPremiers(const bool tab[], unsigned min, unsigned max,
 /// \param colonne  Nombre de colonnes de l'affichage
 void afficherTableau(const bool tab[], unsigned min, unsigned max,
                      char vrai, char faux, unsigned colonne = 10);
+
+
+/// Nom                 positionValeur
+/// But                 Retourner la position du premier élément trouvé
+///                     correspondant à la valeur passé en paramètre
+///
+/// \param tab          Le tableau à afficher
+/// \param taille       Taille du tableau
+/// \param valeur       Valeur recherchée
+/// \param position     Position depuis laquelle il faut chercher la valeur
+/// \return             Retourne la position du premier éléments trouvé
+unsigned positionValeur(const bool tab[], unsigned taille, bool valeur,
+                        unsigned position);
+
+
+/// Nom                 afficherPositionValeur
+/// But                 Afficher les positions correspondantes à la valeur entrée
+///                     en paramètre
+///
+/// \param tab          Le tableau à afficher
+/// \param min          L'index minimal depuis le quel l'affichage commence
+/// \param max          L'index maximal où l'affichage se finit. Il doit être
+///                     strictement plus petit que la taille du tableau
+/// \param valeur       Valeur dont les positions doivent être affichées
+/// \param colonne      Nombre de colonnes de l'affichage
+/// \param alignement   Espacement d'un nombre à l'autre lors de l'affichage
+void afficherPositionValeur(const bool tab[], unsigned min, unsigned max,
+                            bool valeur, unsigned colonne = 10, int alignement = 2);
 
 #endif //LABO06_CRIBLE_GESTIONTABLEAU_H

@@ -1,17 +1,18 @@
 /*
 -----------------------------------------------------------------------------------
-Nom du fichier : <nom du fichier>.<xxx>
-Nom du labo    : <nom du labo>
-Auteur(s)      : <prénom> <nom>
-Date creation  : <jj.mm.aaaa>
-Description    : <à compléter>
-Remarque(s)    : <à compléter>
+Nom du fichier : saisie.cpp
+Nom du labo    : Labo 06 : crible Eratosthène
+Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Date creation  : 19.11.2021
+Description    : Déclaration de la fonction permettant d'obtenir une saisie
+                 utilisateur contrôlée.
+Remarque(s)    : -
 Compilateur    : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
-#include <iostream>
-#include <string>
-#include <limits>
+#include <iostream>     // cout, cin
+#include <string>       // type string
+#include <limits>       // numeric_limits
 #include "saisie.h"
 
 using namespace std;
@@ -22,9 +23,9 @@ int saisie(int min, int max, const string& saisieMessage,
    int  saisie;
 
    do {
+
       // message et saisie
       cout << saisieMessage << " [" << min << " - " << max << "] :";
-
 
       // vérification
       erreur = !(cin >> saisie) || saisie < min || saisie > max;

@@ -25,8 +25,9 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 #include <string>            // type string
 
 #include "saisie.h"          // fonction saisie
-#include "gestionTableau.h"  // fonction
-#include "crible.h"          // fonction
+#include "gestionTableau.h"  // fonctions afficherTableau, positionValeur,
+                             // afficherPositionValeur
+#include "crible.h"          // fonction criblageTableau
 
 using namespace std;
 
@@ -85,7 +86,7 @@ int main() {
    // Crible d'Eratosthène
    while (position < TAILLE) {
 
-      divisionTableau(tableau, TAILLE, PAS_PREMIER, position * position, position);
+      criblageTableau(tableau, TAILLE, PAS_PREMIER, position);
       ++position;
       ++compteur;
       position = positionValeur(tableau, TAILLE, PREMIER, position);
@@ -99,7 +100,7 @@ int main() {
    cout << endl;
 
    cout << MSG_NBR_PREMIERS << compteur << endl;
-   afficherNombresPremiers(tableau, DECALAGE, TAILLE - 1, PREMIER);
+   afficherPositionValeur(tableau, DECALAGE, TAILLE - 1, PREMIER);
    cout << endl;
 
    //-----------------------------------------------------------------

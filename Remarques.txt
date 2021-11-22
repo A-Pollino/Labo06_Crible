@@ -20,8 +20,4 @@ Spécifier le pourquoi des constantes message ?
 
 Remarques :
 
-Modifier le nom des constantes char
-Modifier le nom de certaines fonctions
-commentaires dans les cpp et h
-Finaliser les commentaires dans le main (include)
 

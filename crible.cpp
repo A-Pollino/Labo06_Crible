@@ -1,22 +1,25 @@
 /*
 -----------------------------------------------------------------------------------
-Nom du fichier : <nom du fichier>.<xxx>
-Nom du labo    : <nom du labo>
-Auteur(s)      : <prénom> <nom>
-Date creation  : <jj.mm.aaaa>
-Description    : <à compléter>
-Remarque(s)    : <à compléter>
+Nom du fichier : crible.cpp
+Nom du labo    : Labo 06 : crible Eratosthène
+Auteur(s)      : Laetitia guidetti et Antonio Pollino
+Date creation  : 20.11.2021
+Description    : Définition de la fonction permettant de cribler le tableau.
+Remarque(s)    : -
 Compilateur    : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
 
 #include "crible.h"
 
-void divisionTableau(bool tab[], unsigned taille, bool valeur,
-                     unsigned position, unsigned deplacement) {
+void criblageTableau(bool tab[], unsigned taille, bool valeur,
+                     unsigned diviseur) {
 
-   for(; position < taille; position += deplacement) {
-      tab[position] = valeur;
+   unsigned deplacement = diviseur;
+   diviseur *= diviseur;
+
+   for(; diviseur < taille; diviseur += deplacement) {
+      tab[diviseur] = valeur;
    }
 }
 

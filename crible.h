@@ -1,11 +1,12 @@
 /*
 -----------------------------------------------------------------------------------
-Nom du fichier : <nom du fichier>.<xxx>
-Nom du labo    : <nom du labo>
-Auteur(s)      : <prénom> <nom>
-Date creation  : <jj.mm.aaaa>
-Description    : <à compléter>
-Remarque(s)    : <à compléter>
+Nom du fichier : crible.h
+Nom du labo    : Labo 06 : crible Eratosthène
+Auteur(s)      : Laetitia Guidetti et Antonio Pollino
+Date creation  : 20.11.2021
+Description    : Déclaration de la fonction permettant de cribler le tableau en
+                 fonction de la taille et du caractère souhaité.
+Remarque(s)    : -
 Compilateur    : Mingw-w64 g++ 11.1.0
 -----------------------------------------------------------------------------------
 */
@@ -14,15 +15,16 @@ Compilateur    : Mingw-w64 g++ 11.1.0
 #define LABO06_CRIBLE_CRIBLE_H
 
 
-/// Nom              /
-/// But              Modifier toutes les valeurs dont l'index est divisible par le
-///                  diviseur.
+/// Nom                 criblageTableau
+/// But                 Remplacer les valeurs dont la position est divisible par
+///                     le diviseur
 ///
-/// \param tab       Le tableau à modifier
-/// \param taille    La taille du tableau
-/// \param position  Position depuis laquelle le test effectué
-/// \param diviseur  Diviseur
-void divisionTableau(bool tab[], unsigned taille, bool valeur,
-                     unsigned position, unsigned deplacement);
+/// \param tab          Le tableau à modifier
+/// \param taille       La taille du tableau
+/// \param valeur       La nouvelle valeur à insérer dans le tableau
+/// \param diviseur     Valeur utilisée pour tester si la position est un multiple
+///                     de diviseur
+void criblageTableau(bool tab[], unsigned taille, bool valeur,
+                     unsigned diviseur);
 
 #endif //LABO06_CRIBLE_CRIBLE_H
