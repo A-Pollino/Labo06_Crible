@@ -83,7 +83,7 @@ int main() {
    // Crible d'Eratosthène
    while (position < taille){
 
-      divisionTableau(tableau, taille, PAS_PREMIER, position * 2, position);
+      divisionTableau(tableau, taille, PAS_PREMIER, position * position, position);
       ++position;
       ++compteur;
       position = positionValeur(tableau, taille, PREMIER, position);
